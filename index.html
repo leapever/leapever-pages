@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Software Encryption, VR Panorama, APP Hardening, HTML Protection - Leapever Software [Official]</title>
+  <meta name="title" content="Software Encryption, VR Panorama, APP Hardening - Leapever Software" />
+  <meta name="description"
+    content="Leapever Software specializes in software encryption, VR panorama, APP hardening, HTML protection and more, providing professional and reliable software solutions for enterprises and individual users. Supports multi-platform development with secure and stable software protection technology." />
+  <meta name="keywords"
+    content="software encryption,VR panorama,APP hardening,HTML protection,C# obfuscation,web packaging,software protection,digital rights protection,HTML2EXE,PDF encryption,Android obfuscation,iOS signing" />
+  <meta name="author" content="Leapever Software" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leapever.github.io/leapever-pages/" />
+  <meta property="og:title" content="Software Encryption, VR Panorama, APP Hardening - Leapever Software" />
+  <meta property="og:description"
+    content="Professional software protection solutions: HTML2EXE packer, C# obfuscation, Android hardening, VR panorama tools, and more. Secure and reliable software encryption technology." />
+  <meta property="og:image" content="https://leapever.github.io/leapever-pages/images/leapever.png" />
+  <meta property="og:site_name" content="Leapever Software" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://leapever.github.io/leapever-pages/" />
+  <meta property="twitter:title" content="Software Encryption, VR Panorama, APP Hardening - Leapever Software" />
+  <meta property="twitter:description"
+    content="Professional software protection solutions: HTML2EXE packer, C# obfuscation, Android hardening, VR panorama tools, and more." />
+  <meta property="twitter:image" content="https://leapever.github.io/leapever-pages/images/leapever.png" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://leapever.github.io/leapever-pages/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/leapever.png" />
+  <link rel="apple-touch-icon" href="./images/leapever.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Leapever Software",
+    "applicationCategory": "DeveloperApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "operatingSystem": "Windows, Android, iOS",
+    "description": "Professional software protection and encryption solutions including HTML2EXE packer, C# obfuscation, Android hardening, VR panorama tools, and more.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Leapever Software",
+      "url": "https://leapever.net",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://leapever.github.io/leapever-pages/images/leapever.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "leapever@foxmail.com",
+        "contactType": "Customer Service"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #3498db;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #34495e;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #3498db;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .headline {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .sub {
+      font-size: 1.2rem;
+      color: #34495e;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .features {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #333;
+        padding: 0.5rem;
+        margin-left: auto;
+      }
+
+      .hero {
+        padding: 6rem 1rem 3rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    .software-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .software-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .free-ribbon {
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: linear-gradient(45deg, #2ecc71, #27ae60);
+      color: white;
+      padding: 8px 40px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .free-ribbon::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border-left: 5px solid #1e8449;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #1e8449;
+      border-bottom: 5px solid transparent;
+    }
+
+    .free-ribbon::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 100%;
+      border-right: 5px solid #1e8449;
+      border-left: 5px solid transparent;
+      border-top: 5px solid #1e8449;
+      border-bottom: 5px solid transparent;
+    }
+
+    .software-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .software-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(52, 152, 219, 0.1);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    .software-card:hover::after {
+      transform: translateY(0);
+    }
+
+    .software-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    /* Multi-Platform Packaging Software - Blue theme */
+    #software>div:nth-child(2) .software-card:nth-child(1) .software-icon {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    #software>div:nth-child(2) .software-card:nth-child(2) .software-icon {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+    }
+
+    #software>div:nth-child(2) .software-card:nth-child(3) .software-icon {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+      box-shadow: 0 5px 15px rgba(67, 233, 123, 0.3);
+    }
+
+    #software>div:nth-child(2) .software-card:nth-child(4) .software-icon {
+      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+      box-shadow: 0 5px 15px rgba(250, 112, 154, 0.3);
+    }
+
+    /* Encryption/Signing Software - Red/Orange theme */
+    #software>div:nth-child(3) .software-card:nth-child(1) .software-icon {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      box-shadow: 0 5px 15px rgba(240, 147, 251, 0.3);
+    }
+
+    #software>div:nth-child(3) .software-card:nth-child(2) .software-icon {
+      background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+      box-shadow: 0 5px 15px rgba(250, 112, 154, 0.3);
+    }
+
+    #software>div:nth-child(3) .software-card:nth-child(3) .software-icon {
+      background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+      box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+    }
+
+    #software>div:nth-child(3) .software-card:nth-child(4) .software-icon {
+      background: linear-gradient(135deg, #ee5a6f 0%, #f29263 100%);
+      box-shadow: 0 5px 15px rgba(238, 90, 111, 0.3);
+    }
+
+    #software>div:nth-child(3) .software-card:nth-child(5) .software-icon {
+      background: linear-gradient(135deg, #c471ed 0%, #f64f59 100%);
+      box-shadow: 0 5px 15px rgba(196, 113, 237, 0.3);
+    }
+
+    #software>div:nth-child(3) .software-card:nth-child(6) .software-icon {
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+      box-shadow: 0 5px 15px rgba(168, 237, 234, 0.3);
+    }
+
+    /* Panorama Software - Purple/Green theme */
+    #software>div:nth-child(4) .software-card:nth-child(1) .software-icon {
+      background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+      box-shadow: 0 5px 15px rgba(48, 207, 208, 0.3);
+    }
+
+    #software>div:nth-child(4) .software-card:nth-child(2) .software-icon {
+      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+      box-shadow: 0 5px 15px rgba(168, 237, 234, 0.3);
+    }
+
+    #software>div:nth-child(4) .software-card:nth-child(3) .software-icon {
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      box-shadow: 0 5px 15px rgba(251, 194, 235, 0.3);
+    }
+
+    #software>div:nth-child(4) .software-card:nth-child(4) .software-icon {
+      background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+      box-shadow: 0 5px 15px rgba(132, 250, 176, 0.3);
+    }
+
+    .software-card h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .software-desc {
+      color: #666;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .software-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .software-features li {
+      color: #555;
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .software-features li::before {
+      content: '✓';
+      color: #3498db;
+      position: absolute;
+      left: 0;
+    }
+
+    .try-btn {
+      width: 100%;
+      padding: 0.8rem;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .try-btn:hover {
+      background: #2980b9;
+    }
+
+    .friend-link {
+      color: #5475a9;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .friend-link:hover {
+      color: #3498db;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #3498db;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 999;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+    }
+
+    /* CTA buttons */
+    .cta {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #3498db;
+      transition:
+        background 0.2s,
+        color 0.2s;
+    }
+
+    .cta-primary {
+      background: #3498db;
+      color: #fff;
+    }
+
+    .cta-primary:hover {
+      background: #2980b9;
+    }
+
+    .cta-ghost {
+      background: transparent;
+      color: #3498db;
+    }
+
+    .cta-ghost:hover {
+      background: rgba(52, 152, 219, 0.08);
+    }
+
+    .coming-soon-link {
+      font-size: 0.85rem;
+      color: #3498db;
+      text-decoration: none;
+      text-align: right;
+      margin-top: 8px;
+      display: block;
+    }
+
+    .coming-soon-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div style="display: flex; align-items: center">
+        <img src="./images/leapever.png" loading="lazy" width="32" alt="Leapever Logo" />
+        <a href="#" class="logo">Leapever Software</a>
+      </div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#software">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="https://leapever.net" target="_blank">Official Website</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <span class="eyebrow">Safe · Stable · Efficient</span>
+      <h1 class="headline">Software Protection|HTML Packaging|VR Tools|AI Tools - Leapever Software</h1>
+      <p class="sub">
+        Leapever Software is committed to providing efficient and reliable digital solutions for enterprises and
+        individual users, focusing on EXE/PDF/APK encryption,
+        panoramic VR, HTML packaging, AI tools, and supporting customers' digital transformation.
+      </p>
+      <div class="actions cta">
+        <a class="cta-btn cta-primary" href="#software">Browse Products</a>
+        <a class="cta-btn cta-ghost" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="software" style="padding: 4rem 2rem; background: #fff">
+    <h2 style="text-align: center; margin-bottom: 3rem; color: #2c3e50; font-size: 2rem">
+      Software Products
+    </h2>
+
+    <div style="max-width: 1200px; margin: 0 auto 4rem;">
+      <div
+        style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid #3498db;">
+        <h3 style="color: #2c3e50; font-size: 1.8rem; margin: 0;">Multi-Platform Packaging Software - Supports
+          Windows/Android/IOS</h3>
+      </div>
+      <div class="software-grid">
+        <div class="software-card">
+          <div class="software-icon">💻</div>
+          <h3>HTML2EXE Packer Tool</h3>
+          <p class="software-desc">Professional HTML to PC Application Tool</p>
+          <ul class="software-features">
+            <li>Multiple Browser Engines</li>
+            <li>Protects HTML Code Resources</li>
+            <li>Various Advanced Features</li>
+          </ul>
+          <a class="try-btn" href="https://leapever.net/intro/html2exe" target="_blank">View Details</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">📱</div>
+          <h3>HTML2APK Packer Tool</h3>
+          <p class="software-desc">Websites or local HTML to Android APPs</p>
+          <ul class="software-features">
+            <li>No Android SDK configuration needed</li>
+            <li>Support website and local HTML projects</li>
+            <li>Various advanced features</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/apk-packer" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">🍎</div>
+          <h3>HTML2IOS Packer Tool</h3>
+          <p class="software-desc">Convert websites into iOS applications</p>
+          <ul class="software-features">
+            <li>No Mac XCode environment required</li>
+            <li>Pack iOS APPs directly on Windows</li>
+            <li>Support URLs and local HTML projects</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/ios-packer" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">🏷️</div>
+          <h3>HTML2WebClip Packer Tool</h3>
+          <p class="software-desc">Convert URLs into IOS WebClip APPs</p>
+          <ul class="software-features">
+            <li>No signature required, permanent use</li>
+            <li>Pack directly on Windows</li>
+            <li>Remove title with green badge display</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/ios-bookmark-packer" class="coming-soon-link" target="_blank">I want to
+            try chinese version →</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto 4rem;">
+      <div
+        style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid #e74c3c;">
+        <h3 style="color: #2c3e50; font-size: 1.8rem; margin: 0;">Encryption/Signing Software - Machine-Code
+          Encryption, Strong Obfuscation</h3>
+      </div>
+      <div class="software-grid">
+        <div class="software-card">
+          <div class="software-icon">🔒</div>
+          <h3>C# Obfuscator Master</h3>
+          <p class="software-desc">Strong obfuscation for C# EXE/DLL</p>
+          <ul class="software-features">
+            <li>Multiple encryption methods</li>
+            <li>Support various frameworks</li>
+            <li>Compatible different .NET versions</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/csharp-obfuscator" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">🤖</div>
+          <h3>Android Obfuscator Tool</h3>
+          <p class="software-desc">One-click APK hardening and protection</p>
+          <ul class="software-features">
+            <li>One-click APK protection</li>
+            <li>APK shelling, SO encryption, anti-debug</li>
+            <li>No development environment needed</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/apk-obfuscator" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">💾</div>
+          <h3>EXE Encryption Master</h3>
+          <p class="software-desc">Professional machine-code encryption tool</p>
+          <ul class="software-features">
+            <li>Multiple encryption methods</li>
+            <li>Support installer or portable EXE</li>
+            <li>Trial mode and online validation</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/exe-encryptor" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">📑</div>
+          <h3>PDF Encryption Master</h3>
+          <p class="software-desc">PDF encryption and packing tool</p>
+          <ul class="software-features">
+            <li>Multiple encryption methods</li>
+            <li>Strong encryption for PDF files</li>
+            <li>No additional PDF reader required</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/pdf2exe" class="coming-soon-link" target="_blank">I want to try chinese
+            version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">📄</div>
+          <h3>PDF to APK Master</h3>
+          <p class="software-desc">Convert encrypted PDF to Android app</p>
+          <ul class="software-features">
+            <li>Multiple encryption methods</li>
+            <li>Strong encryption for PDF files</li>
+            <li>No additional PDF reader required</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/pdf2apk" class="coming-soon-link" target="_blank">I want to try chinese
+            version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">🍏</div>
+          <h3>iOS Resign Tool</h3>
+          <p class="software-desc">One-click IPA signing on Windows</p>
+          <ul class="software-features">
+            <li>No iOS dev environment needed</li>
+            <li>Support batch signing, fast and efficient</li>
+            <li>Auto-clear time lock to prevent crashes</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/ios-resign-tool" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto 4rem;">
+      <div
+        style="display: flex; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid #9b59b6;">
+        <h3 style="color: #2c3e50; font-size: 1.8rem; margin: 0;">Panorama Software - Professional VR Download &
+          Viewer Tools</h3>
+      </div>
+      <div class="software-grid">
+        <div class="software-card">
+          <div class="software-icon">⬇️</div>
+          <h3>Panorama Downloader</h3>
+          <p class="software-desc">One-click panorama image download</p>
+          <ul class="software-features">
+            <li>Download pano images from websites</li>
+            <li>Support KRPano and Baidu Street View</li>
+            <li>No development environment needed</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/pano-downloader" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="software-icon">🔑</div>
+          <h3>KRPano Decryptor</h3>
+          <p class="software-desc">One-click KRPano XML/JS decryption tool</p>
+          <ul class="software-features">
+            <li>Support single and batch decryption</li>
+            <li>Compatible with all KRPano versions</li>
+            <li>One-click decrypt, no setup needed</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/krpano-decryptor" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="free-ribbon">FREE</div>
+          <div class="software-icon">🌅</div>
+          <h3>Pano to Video Master</h3>
+          <p class="software-desc">Free panorama to video converter</p>
+          <ul class="software-features">
+            <li>Free to use, support 4K and 120fps</li>
+            <li>Multiple export formats supported</li>
+            <li>Easy to use, no technical knowledge needed</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/pano2video" class="coming-soon-link" target="_blank">I want to try
+            chinese version →</a>
+        </div>
+
+        <div class="software-card">
+          <div class="free-ribbon">FREE</div>
+          <div class="software-icon">🖼️</div>
+          <h3>VR Panorama Viewer</h3>
+          <p class="software-desc">Free panorama VR image viewer</p>
+          <ul class="software-features">
+            <li>Support various panorama formats</li>
+            <li>VR mode for immersive experience</li>
+            <li>Completely free, no ads</li>
+          </ul>
+          <button class="try-btn" style="background: #95a5a6; cursor: not-allowed;" disabled>Coming Soon</button>
+          <a href="https://leapever.com/intro/vr-viewer" class="coming-soon-link" target="_blank">I want to try chinese
+            version →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" style="padding: 4rem 2rem; background: #f5f7fa" itemscope
+    itemtype="https://schema.org/ContactPage">
+    <h2 style="text-align: center; margin-bottom: 3rem; color: #2c3e50; font-size: 2rem">
+      Contact Us
+    </h2>
+    <div style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+          text-align: center;
+          padding: 0 1rem;
+        ">
+      <div class="contact-item" style="
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+          " itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+        <div style="font-size: 5rem; height: 150px">📧</div>
+        <h3 style="color: #2c3e50; margin-bottom: 0.5rem">Email</h3>
+        <p style="color: #666"><a href="mailto:leapever@foxmail.com" itemprop="email"
+            style="color: #666; text-decoration: none;">leapever@foxmail.com</a></p>
+        <meta itemprop="contactType" content="Customer Service" />
+      </div>
+    </div>
+  </section>
+
+  <div style="
+        margin-top: 4rem;
+        padding: 2rem;
+        background: linear-gradient(#ffffff 0%, #c3cfe2 100%);
+        border-radius: 10px;
+        text-align: center;
+      ">
+    <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap">
+      <div style="flex: 1; min-width: 200px">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem">⏱️</div>
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem">Efficient Delivery</h4>
+        <p style="color: #666">Agile Development Model<br />Delivery Cycle Shortened by 30%</p>
+      </div>
+      <div style="flex: 1; min-width: 200px">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem">🛠️</div>
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem">Full-Service Support</h4>
+        <p style="color: #666">Requirement Analysis, Solution Design<br />Continuous Operation and Maintenance Support
+        </p>
+      </div>
+      <div style="flex: 1; min-width: 200px">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem">🔒</div>
+        <h4 style="color: #2c3e50; margin-bottom: 0.5rem">Security Assurance</h4>
+        <p style="color: #666">Professional Encryption Technology<br />Comprehensive Data Protection</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="friend-links" style="
+        text-align: center;
+        padding: 2rem;
+        background: #c3cfe2;
+      ">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <span style="color: #666; margin-right: 1rem">Links:</span>
+      <a href="https://leapever.net" target="_blank" rel="noopener noreferrer" class="friend-link">Official Website</a>
+    </div>
+  </section>
+
+  <footer style="
+        text-align: center;
+        padding: 1.5rem 2rem;
+        background: #2c3e50;
+        color: #fff;
+      ">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <p style="margin-bottom: 0.5rem">&copy; 2026 Leapever Software. All rights reserved.</p>
+      <p style="font-size: 0.9rem; color: #bdc3c7">
+        <a href="mailto:leapever@foxmail.com" style="color: #3498db; text-decoration: none;">leapever@foxmail.com</a>
+        |
+        <a href="https://leapever.net" target="_blank" rel="noopener noreferrer"
+          style="color: #3498db; text-decoration: none;">leapever.net</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="back-to-top" id="backToTop" aria-label="Back to top">↑</div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
